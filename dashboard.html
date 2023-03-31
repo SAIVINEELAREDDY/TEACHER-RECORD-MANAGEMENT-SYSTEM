@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<title>TRMS Admin Dashboard</title>
+
+<link rel="apple-touch-icon" href="apple-icon.png">
+<link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+<link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+<link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<aside id="left-panel" class="left-panel">
+<nav class="navbar navbar-expand-sm navbar-default">
+<
+<div class="navbar-header">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data- target="#mainmenu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"> <i class="fa fa-bars"></i>
+</button>
+<a class="navbar-brand" href="dashboard.php">TRMS ADMIN | </a> </div>
+<div id="main-menu" class="main-menu collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="active">
+<a href="dashboard.php"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+</li>
+<li class="menu-item-has-children dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Subjects</a>
+<ul class="sub-menu children dropdown-menu">
+<li><i class="menu-icon fa fa-file-o"></i><a href="add-subjects.php">Add Subjects</a></li>
+<li><i class="menu-icon fa fa-file-o"></i><a href="managesubjects.php">Manage Subjects</a></li> </ul>
+</li>
+<li class="menu-item-has-children dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Teacher</a>
+<ul class="sub-menu children dropdown-menu">
+<li><i class="menu-icon fa fa-file-o"></i><a href="add-teacher.php">Add Teacher</a></li>
+<li><i class="menu-icon fa fa-file-o"></i><a href="manage-teacher.php">Manage Teacher</a></li>
+</ul>
+</li>
+<li class="active">
+<a href="search.php"> <i class="menu-icon fa fa-search"></i>Search </a>
+</li>
+<li class="menu-item-has-children dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Reports</a>
+<ul class="sub-menu children dropdown-menu">
+<li><i class="menu-icon fa fa-file-o"></i><a href="bwdates-report-ds.php">Between Dates Report</a></li>
+</ul>
+</li>
+</ul>
+
+</div><!-- /.navbar-collapse -->
+
+</nav>
+
+</aside>
+
+<div id="right-panel" class="right-panel">
+<header id="header" class="header">
+<div class="header-menu">
+<div class="col-sm-7">
+<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+<div class="header-left">
+<div class="form-inline">	</div>
+<div class="form-inline">
+</div>
+</div>
+</div>
+<div class="col-sm-5">
+<div class="user-area dropdown float-right">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false">
+<img class="user-avatar rounded-circle" src="images/images.png" alt="User Avatar">
+</a>
+<div class="user-menu dropdown-menu">
+<a class="nav-link" href="adminprofile.php"><i class="fa fa-user"></i> My Profile</a>
+
+<a class="nav-link" href="change-password.php"><i class="fa fa- cog"></i>Change Password</a>
+<a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+</div>
+</div>
+</div>
+</div>
+</header> <!-- Header-->
+<div class="breadcrumbs">
+<div class="col-sm-4">
+<div class="page-header float-left">
+<div class="page-title">
+<h1>Dashboard</h1>
+</div>
+</div>
+</div>
+<div class="col-sm-8">
+<div class="page-header float-right">
+<div class="page-title">
+<ol class="breadcrumb text-right">
+<li class="active">Dashboard</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="content mt-3">
+<div class="col-sm-6 col-lg-6">
+    <div class="card text-white bg-flat-color-4">
+        <div class="card-body pb-0">
+        <div class="dropdown float-right">
+        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
+        <i class="fa fa-cog"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+        <div class="dropdown-menu-content">
+        <a class="dropdown-item" href="manage-subjects.php">Action</a>
+        </div>
+        </div>
+        </div>
+        <h4 class="mb-0">
+        <span class="count">14</span>
+        </h4>
+        <p class="text-light">Total Subjects</p>
+        <div class="chart-wrapper px-3" style="height:70px;" height="70">
+        <canvas id="widgetChart4"></canvas>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!--/.col-->
+        <div class="col-sm-6 col-lg-6">
+        <div class="card text-white bg-flat-color-2">
+        <div class="card-body pb-0">
+        <div class="dropdown float-right">
+        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
+        <i class="fa fa-cog"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu-content">
+        <a class="dropdown-item" href="manage-teacher.php">Action</a> </div>
+        </div>
+        </div>
+        <h4 class="mb-0">
+        <span class="count">5</span>
+        </h4>
+        <p class="text-light">Total Teachers</p>
+        <div class="chart-wrapper px-0" style="height:70px;" height="70">
+        <canvas id="widgetChart2"></canvas>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        </div> <!-- .content -->
+        </div><!-- /#right-panel -->
+        <!-- Right Panel -->
+        <script src="vendors/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+        <script src="assets/js/dashboard.js"></script>
+        <script src="assets/js/widgets.js"></script>
+        
+        <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+        <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+        <script>   (function($) { "use strict"; jQuery('#vmap').vectorMap(
+        {	map:
+        'world_en', backgroundColor:	null, color: '#ffffff', hoverOpacity: 0.7, selectedColor:
+        '#1de9b6', enableZoom:
+        true, showTooltip:
+        true, values:
+        sample_data, scaleColors: ['#1de9b6',
+        '#03a9f5'],
+        normalizeFunction: 'polynomial'
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
+
+                

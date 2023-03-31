@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<title>TRMS||||Manage Teacher</title>
+<link rel="apple-touch-icon" href="apple-icon.png">
+<link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+<link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!-- Left Panel -->
+<aside id="left-panel" class="left-panel">
+<nav class="navbar navbar-expand-sm navbar-default">
+<
+<div class="navbar-header">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data- target="#mainmenu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"> <i class="fa fa-bars"></i>
+</button>
+<a class="navbar-brand" href="dashboard.php">TRMS ADMIN | </a> </div>
+<div id="main-menu" class="main-menu collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="active">
+<a href="dashboard.php"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+</li>
+<li class="menu-item-has-children dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Subjects</a>
+<ul class="sub-menu children dropdown-menu">
+    <li><i class="menu-icon fa fa-file-o"></i><a href="add-subjects.php">Add Subjects</a></li>
+    <li><i class="menu-icon fa fa-file-o"></i><a href="manage-subjects.php">Manage Subjects</a></li>
+    </ul>
+    </li>
+    <li class="menu-item-has-children dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Teacher</a>
+    <ul class="sub-menu children dropdown-menu">
+    <li><i class="menu-icon fa fa-file-o"></i><a href="add-teacher.php">Add Teacher</a></li>
+    <li><i class="menu-icon fa fa-file-o"></i><a href="manage-teacher.php">Manage Teacher</a></li>
+    </ul>
+    </li>
+    <li class="active">
+    <a href="search.php"> <i class="menu-icon fa fa-search"></i>Search </a>
+    </li>
+    <li class="menu-item-has-children dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false"> <i class="menu-icon fa fa-tasks"></i>Reports</a>
+    <ul class="sub-menu children dropdown-menu">
+    <li><i class="menu-icon fa fa-file-o"></i><a href="bwdates-report-ds.php">Between Dates Report</a></li>
+    </ul
+    >
+    </li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+    </nav>
+    </aside>
+    <div id="right-panel" class="right-panel">
+    <!-- Header-->
+    <header id="header" class="header">
+    <div class="header-menu">
+    <div class="col-sm-7">
+        <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+        <div class="header-left">
+        <div class="form-inline">	</div>
+        <div class="form-inline">
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-5">
+        <div class="user-area dropdown float-right">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false">
+        <img class="user-avatar rounded-circle" src="images/images.png" alt="User Avatar"> </a>	<div class="user-menu dropdown-menu">
+        <a class="nav-link" href="adminprofile.php"><i class="fa fa-user"></i> My Profile</a>
+        <a class="nav-link" href="change-password.php"><i class="fa fa- cog"></i>Change Password</a>
+        <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </header> <div class="breadcrumbs">
+        <div class="col-sm-4">
+        <div class="page-header float-left">
+        <div class="page-title">
+        
+        <h1>Manage Teachers</h1>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-8">
+        <div class="page-header float-right">
+        <div class="page-title">
+        <ol class="breadcrumb text-right">
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="manage-teacher.php">Manage Teachers</a></li>
+        <li class="active">Manage Teachers</li>
+        </ol>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="content mt-3">
+<div class="animated fadeIn">
+<div class="row">
+<div class="col-lg-12">
+<div class="card">
+<div class="card-header">
+<strong class="card-title">Manage Teachers</strong>
+</div>
+<div class="card-body">
+<table class="table">
+<thead>
+<tr>
+<tr>
+<th>S.NO</th>
+<th>Teacher Name</th>
+<th>Subject</th>
+<th>Registration Date</th>
+<th>Action</th>
+</tr>
+</tr>
+</thead >
+</tr>
+<td>1</td>
+<td>Lokeswara Reddy</td>
+<td>Mathmetics</td>
+<td>2019-10-07 13:07:08</td>
+<td><a href="edit-teacher-detail.php?editid=1">Edit Details</a></td> </tr>
+<tr>
+<td>2</td>
+
+<td>Srinivasarao</td>
+<td>Accounts</td>
+<td>2019-10-07 13:15:52</td>
+<td><a href="edit-teacher-detail.php?editid=2">Edit Details</a></td> </tr>
+<tr>
+<td>3</td>
+<td>Rahmatullah</td>
+<td>Arts</td>
+<td>2019-10-07 13:17:20</td>
+<td><a href="edit-teacher-detail.php?editid=3">Edit Details</a></td> </tr>
+<tr>
+<td>4</td>
+<td>Manorama Devi</td>
+<td>Operating System (OS)</td>
+<td>2019-10-14 00:31:45</td>
+<td><a href="edit -<teache/tr> r-detail.php?editid=4">Edit Details</a></td>
+<tr>
+<td>5</td>
+<td>teja</td>
+<td>Sanskrit</td>
+<td>2021-12-15 13:28:00</td>
+<td><a href="edit-teacher-detail.php?editid=5">Edit Details</a></td> </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div><!-- .animated
+-->	</div><!--
+.content -->
+</div><!-- /#right-panel -->
+<!-- Right Panel -->
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>	</html>
+            
